@@ -1,0 +1,791 @@
+ 
+// Q.1-Write a program to check whether input character is lowercase character, uppercase character, digits or special symbols.
+/* Algorithm
+ Step1:Start
+ Step2:input a character 
+ Step3:check if it is uppercase if true then display input character is uppercase 
+ Step4:check if it is lowercase if true then display input character is lowercase 
+ Step5:check if it is number if true then display input character is number 
+ Step6:else dispaly input character is special symbol. 
+ Step7:Stop.*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    char chr;
+
+    // Input character from user
+    printf("Enter any character: ");
+    scanf("%c", &chr);
+
+
+    if(chr >= 'A' && chr <= 'Z')
+    {
+        printf("'%c' is uppercase alphabet.", chr);
+    }
+    else if(chr >= 'a' && chr <= 'z')
+    {
+        printf("'%c' is lowercase alphabet.", chr);
+    }
+    else if(chr >= '1' && chr <= '100')
+    // for(chr = 1; chr <= 100; chr++)
+    {
+        printf("'%c' is a number", chr);
+    }
+    else
+    {
+        printf("'%c' is a special symbol.", chr);
+    }
+
+    return 0;
+}
+*/
+// When input is 4 then Output is Number
+
+
+//------------------------------------------------------------------------------------------------------
+// Q.2-Write a program to input a number and display which day of the week on the basis of input number?
+/* Algorithm
+Step1:Start
+Step2:read numbers between 1 to 7 
+Step3:check if it is equal to 1, then display Sunday 
+Step4:check if it is equal to 2, then display Monday 
+Step5:check if it is equal to 3, then display Tuesday 
+Step6:check if it is equal to 4, then display Wednesday 
+Step7:check if it is equal to 5, then display Thursday 
+Step8:check if it is equal to 6, then display Friday 
+Step9:check if it is equal to 7, then display saturday 
+Step10:Stop 
+*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    int week;
+
+    // Input week number from user 
+    printf("Enter week number (1 to 7): ");
+    scanf("%d", &week);
+
+
+    if(week == 1)
+    {
+        printf("Sunday");
+    }
+    else if(week == 2)
+    {
+        printf("Monday");
+    }
+    else if(week == 3)
+    {
+        printf("Tuesday");
+    }
+    else if(week == 4)
+    {
+        printf("Wednesday");
+    }
+    else if(week == 5)
+    {
+        printf("Thursday");
+    }
+    else if(week == 6)
+    {
+        printf("Friday");
+    }
+    else if(week == 7)
+    {
+        printf("Saturday");
+    }
+    else
+    {
+        printf("Invalid Input! Please enter week number between 1 to 7.");
+    }
+
+    return 0;
+}
+*/
+// I\O
+// Enter week number (1 to 7): 7
+// Saturday 
+
+
+
+//----------------------------------------------------------------------------------------------
+//Q.3-Write a program to find the number given by user is excatly divisible by 2 3 and 6 or not?
+/* Algorithm
+Step1:Start 
+Step2:Read a number 
+Step3:Check if it is divisible by 2,3,and 6, if true then display it is divisible. 
+Step4:if above step is false print it is not divisible
+step5: Stop
+*/
+/*
+#include <stdio.h>
+int main()
+{
+	int num;
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	if(num%2==0)
+	{
+		printf("%d is divisible by 2",num);
+	}
+	else if (num%3==0)
+    {
+        printf("%d is divisible by 3", num);
+    }
+    else if (num%6==0)
+    {
+        printf("%d is divisible by 6", num);
+    }
+    else
+	{
+		printf("%d is not divisible by 2,3 and 6",num);
+	}
+	return 0;
+}
+*/
+// I\O
+// Enter a number: 17
+// 17 is not divisible by 2,3 and 6 
+
+
+//----------------------------------------------------------------------------
+//Q.4- Write a program to find maximum of 3 numbers using else if ladder?
+/* Algorithm
+Step1:Start 
+Step2:Read three numbers
+Step3:check if num1>num2 and num1>num3 if true then display num1 is max.
+Step4:else if num2>num3 if true then display num2 is max.
+Step5:else print num3 is maximum
+Step6:Stop
+*/
+
+/*
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, num3, num4;
+    printf("Enter 3 numbers: ");
+    scanf("%d%d%d", &num1,&num2,&num3);
+    if (num1>num2 && num1>num3)
+    {
+        printf("%d is max", num1);
+    }
+    else if (num2>num3)
+    {
+        printf("%d is max", num2);
+    }
+    else
+        printf("%d is max", num3);
+
+    return 0;
+}
+*/
+// I\O
+// Enter 3 numbers: 45
+// 43
+// 21
+// 45 is max  
+
+
+
+//-------------------------------------------------------------------------
+//Q.5- Write a program to find maximum of 4 numbers using else if ladder?
+/* Algorithm
+Step1:Start
+Step2:Read four nums.
+Step3:check if num1>num2 and num1>num3 and num1>num4 if true then display num1 is max.
+Step4:else if num2>num3 and num2>num4 if true then display num2 is max.
+Step5:else if num3>num4 if true then display num3 is max.
+Step6:else display num4 is max.
+Step7:Stop 
+*/
+
+/*
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, num3, num4;
+    printf("Enter four numbers: ");
+    scanf("%d%d%d%d", &num1,&num2,&num3,&num4);
+    if (num1>num2 && num1>num3 && num1>num4)
+    {
+        printf("%d is max", num1);
+    }
+    else if (num2>num3 && num2>num4)
+    {
+        printf("%d is max", num2);
+    }
+    else if (num3>num4)
+    {
+        printf("%d is max",num3);
+    }
+    else
+        printf("%d is max", num4);
+
+    return 0;
+}
+*/
+// I\O
+// Enter four numbers: 45
+// 37
+// 23
+// 17
+// 45 is max       
+
+
+//---------------------------------------------------------------------------
+//Q.6-Write a program to find maximum of 3 numbers using nested if else?
+/*Algorithm
+Step1:Start 
+Step2:Read three numbers
+Step3:check if num1>num2 
+    Step3.1:else if num1>num3 
+    Step3.2:if above steps are true then show num1 is max
+    Step3.3:if step third first is false then show num3 is max
+    Step3.4:if step 3 not meet
+Step4:check if num2>num3 if true then print num2 is max
+Step5:else display num3 is max
+Step6:Stop
+*/
+
+/*
+#include <stdio.h>
+
+int main()
+{
+    int num1,num2,num3;
+    printf("Enter there numbers: ");
+    scanf("%d%d%d", &num1,&num2,&num3);
+    if (num1>num2)
+    {
+        if (num1>num3)
+        {
+            printf("\n %d is maximum",num1);
+        }
+        else{
+            printf("\n%d is maximum",num3);
+        }
+    }
+    else {
+        if (num2>num3)
+        {
+            printf("\n%d is max",num2);
+        }
+        else {
+            printf("\n %d is max",num3);
+        }
+        
+    }
+    return 0;
+}
+*/
+//I\O 
+// Enter there numbers: 45
+// 34
+// 31
+//45 is maximum
+
+
+
+//--------------------------------------------------------------------------------------
+// Q.7-Write a program to find maximum of 4 numbers using nested if else?
+/*Algorithm
+Step1:Start 
+Step2:Read three numbers
+Step3:check if num1>num2 
+    Step3.1:If true,check if num1>num3 if true num1>num4
+    Step3.2:if above steps are true then show num1 is max
+    Step3.3:if false then show num4 is max, if 3.1 is false then check if num3>num4
+    Step3.4:if true display num3 is max else print num4 is max
+Step4:check if step 3 is false num2>num3 if true then print num2 is max
+Step5:else display num4 is max, if step4 is false check if num3>num4 if true display num3 is max else num4 is max
+Step6:Stop
+*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    int num1,num2,num3,num4;
+    printf("Enter four numbers: ");
+    scanf("%d%d%d", &num1,&num2,&num3,&num4);
+    if (num1>num2)
+    {
+        if (num1>num3)
+        {
+            if (num1>num4)
+            {
+                 printf("\n %d is maximum",num1);
+            }
+            else{
+            printf("\n%d is maximum",num4);
+        }
+    }
+    else {
+        if (num3>num4)
+        {
+            printf("\n%d is max",num3);
+        }
+        else 
+        {
+            printf("\n %d is max",num4);
+        }
+    }
+    }
+    else 
+    {
+        if (num2>num3)
+        {
+            if (num2>num4)
+        {
+            printf("\n%d is max",num2);
+        }
+        else 
+        {
+            printf("\n %d is max",num4);
+        }
+    }
+    else
+    {
+        if (num3>num4)
+        {
+            printf("\n%d is max",num3);
+        }
+        else {
+            printf("\n %d is max",num4);}
+        }
+    }
+}
+    return 0;
+}
+*/
+    // I/O
+    // Enter four numbers: 45 34 23 21
+    // 45 is max
+
+
+
+//-----------------------------------------------------------------------------
+//Q.8-An electricity board charges according to the following rate
+    // For the first 100 units -----Rs 40 per unit
+    // For the next 200 units  -----Rs 50 per unit
+    // For beyond 300 units   -----Rs 60 per unit
+    // All users are also charged meter charge, which is equal to Rs50. Write a program to read number of units consumemd and print the total charge.
+ /*Algorithm
+Step1:Start 
+Step2:Read consumed units
+Step3:check if unit<= 100 then if true calculate charge=units*40;
+Step4:if false then check if units>100&&units<=300
+Step4.1:if true calculate charge=100*40+(units-100)*50+50 
+Step5:if false calculate charge=100*40+200*50+(units-300)*60+50
+Step6:Display output
+Step7:Stop
+ */
+ /*   // Source_code
+#include <stdio.h>
+
+int main()
+{
+    int units, charge;
+    printf("Enter units consumed: ");
+    scanf("%d", &units);
+    if (units<=100)
+    {
+        charge=units*40;
+    }
+    else if (units>100 && units<=300)
+    {
+        charge=100*40+(units-100)*50;
+    }
+    else
+    {
+        charge=100*400+200*50+(units-300)*60;
+    }
+    charge=charge+50;
+    printf("The total charge of %d units is %d",units,charge);
+    
+    return 0;
+}
+*/
+// I\O
+// Enter units consumed: 60
+// The total charge of 60 units is 2450
+
+
+
+//---------------------------------------------------------------------
+//Q.9-An electricity board charges according to the following rates
+    // For the first 20 units  -----Rs80
+    // For the next 80 units   -----Rs7.5 per unit
+    // For next 100 units      -----Rs8.5 per unit
+    // For beyond  200 units   -----Rs9.5 per unit
+//All users are also charged meter change, which is equal to Rs 50. Also tax=5% of charge.
+// Write a program to read number of units consumed and print the total charge.
+/*Algorithm
+Step1:Start 
+Step2:Read consumed units
+Step3:check if it is less than equal to 20 if true charge=80+50; 
+    then tcharge=charge+0.05*charge 
+Step4:check if it is less than equal to 100 if true calculate charge=80+(units-20)*7.5+50;    
+    tcharge=charge+5/100*charge; 
+Step5:check if it is less than equal to 200 if true then calculate charge=80+80*7.5+(units-100)*8.5+50;      
+    tcharge=charge+5/100*charge; 
+Step6:If step 4 & 5 are false calculate charge=80+80*7.5+100*8.5+(units-200)*9.5+50;   
+    tcharge=charge+5/100*charge; 
+Step6:Display tcharge
+Step7:Stop
+*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    int units;
+    float charge, total;
+    printf("Enter units consumed: ");
+    scanf("%d", &units);
+    if (units<=20)
+    {
+        charge=units*180;
+    }
+    else if (units>20 && units <=100)
+    {
+        charge=20*80  + (units-20)*7.5;
+    }
+    else if (units>100 && units <=200)
+    {
+        charge=20*80 +80*7.5 +(units-100)*8.5;
+    }
+    else
+    {
+        charge=20*80 +80*7.5+100*8.5 +(units-200)*9.5;
+    }
+    charge=charge+50;
+    total=0.5*charge;
+    printf("\n The total charge is %f", total);
+    return 0;
+}
+*/
+// I\O
+// Enter units consumed: 57
+//  Tlhe total charge is 963.750000 
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+//Q.10-Write a program that read marks of studet in seven subjects. Calculate the percentage if the student has achived greater than 45 in each subject and use these  conditions
+//Percentage greater than equals to 80 devision
+//Percentage from 60 to 79 id first division
+// Percentage from 45 to 59 is second division
+/*Algorithm
+Step1:Start 
+Step2:Read marks for 7 subjects 
+Step3:Check if input marks are greater and equal to 45 of each subject, if true then calculate percentage 
+Step3.1:Check if percentage is greater and equal to 80, if true then display distinction
+Step3.2:Check if percentage is greater and equal to 60, if true then display first division
+Step3.6:if step 3.1 and 3.2 are false then display second division 
+Step4:else print fail
+Step5:Stop
+*/
+/*
+#include <stdio.h>
+int main(void){
+	float m1,m2,m3,m4,m5,m6,m7;
+	float percent,avg;
+	float total;
+	
+	printf(" Enter the marks of m1: ");
+	scanf("%f", &m1);
+	printf(" Enter the marks of m2: ");
+	scanf("%f", &m2);
+	printf("Enter the marks of m3: ");
+	scanf("%f", &m3);	
+    printf(" Enter the marks of m4: ");
+	scanf("%f", &m4);
+	printf(" Enter the marks of m5: ");
+	scanf("%f", &m5);
+	printf("Enter the marks of m6: ");
+	scanf("%f", &m6);	
+    printf("Enter the marks of m7: ");
+	scanf("%f", &m7);
+	total= m1+m2+m3+m4+m5+m6+m7;
+	printf("\n the total mark is %.2f ",total);
+	percent = (total/700)*100;
+	avg = (total/7);
+	if(percent >= 80){
+	printf("\n You got Disitinction");
+    printf("\n the percentage mark is : %.0f percentage ", percent);
+	printf("\n the average mark  is: %.2f\n", avg);
+		}
+	else if ( percent >=60){
+		printf("\n You got First division");
+        printf("\n the percentage mark is : %.0f percentage ", percent);
+	    printf("\n the average mark  is: %.2f\n", avg);
+		}
+	else if ( percent >=45){
+		printf("\n You got Second division");
+        printf("\n the percentage mark is : %.0f percentage ", percent);
+	    printf("\n the average mark  is: %.2f\n", avg);
+		}
+	else if ( percent < 40){
+		printf("\n You Failed in this exam");
+        printf("\n the percentage mark is : %.0f percentage ", percent);
+	    printf("\n the average mark  is: %.2f\n", avg);
+		}
+    else if (percent, avg > 100){
+        printf("Invaild input! Please enter marks between 1-100!");
+    }
+return 0;
+}
+*/
+/*
+ Enter the marks of m1: 50
+ Enter the marks of m2: 55
+Enter the marks of m3: 53
+ Enter the marks of m4: 65
+ Enter the marks of m5: 78
+Enter the marks of m6: 79
+Enter the marks of m7: 80
+
+ the total mark is 460.00 
+ You got First division
+ the percentage mark is : 66 percentage 
+ the average mark  is: 65.71 */
+ 
+ 
+
+ //----------------------------------------------------------------------
+ //Q.11 A company does insurance of the driver in the following cases
+ //a. If the driver is married
+ //b. If the driver is unmarried male and above 30 years of the age
+ //c. If the driver is unmarried female and above 25 years of the age.
+ //Write the program without using any logical operators.
+ /*Algorithm
+Step1:Start
+Step2:Read the userinput and assigned as per varibles
+Step3:check if driver is married then print eligible for insurance
+Step4:else if unmarried male but above 30 years old then print eligible else print not eligible
+Step5:else if umarried female but above 25 years old then print eligible else print not eligible
+Step6:Stop
+*/
+/*
+ #include<stdio.h>
+
+int main()
+{
+   int age;
+   char mstat,gender;    
+   printf("Hit m if you are married if not hit n:");
+   scanf("\n%c",&mstat);  
+   if(mstat=='m')
+   {
+       printf("You are eligible for insurance");
+   }
+   else
+   {
+       printf("Enter m if your male or f if you are female:");
+       scanf("\n%c",&gender);
+       printf("Enter your age:");
+       scanf("\n%d",&age);
+       if(gender=='m')
+       {
+           if(age>30)
+           {
+               printf("Your are eligible for insurance.");
+           }
+           else
+           {
+               printf("Your are not eligible for insurance.");
+           }
+       }
+       else
+       {
+           if(age>25)
+            {
+               printf("Your are eligible for insurance.");
+           }
+           else
+           {
+               printf("Your are not eligible for insurance.");
+           }
+
+       }
+   }
+   return 0;
+}
+*/
+/*
+Hit m if you are married if not hit n:n
+Enter m if your male or f if you are female:m
+Enter your age:31
+Your are eligible for insurance. */
+
+
+
+//------------------------------------------------------------------------------
+//Q.12-A company does insurance of the driver in the followong cases
+//a.If the driver is married
+//b.If the driver is unmarried male and above 30 years of age.
+//c.If the driver is unmarried female and above 25 years of age.
+
+//Write a program using logical operations.
+/*Algorithm
+Step1:Start
+Step2:Read the userinput and assigned as per varibles
+Step3:check if driver is married then print eligible for insurance
+Step4:else if unmarried male but above 30 years old then print eligible else print not eligible
+Step5:else if umarried female but above 25 years old then print eligible else print not eligible
+Step6:Stop
+*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    int age;
+    char status,gender;
+    printf("Enter y if married and n if unmarried: ");
+    scanf("%c", &status);
+    if (status=='n')
+    {
+        printf("Enter m if male and f if female:");
+        scanf("\n%c", &gender);
+        printf("Enter the age: ");
+        scanf("\n %d",&age);
+        if (gender=='m' && age>30)
+        {
+            printf("Eligible for insurance");
+        }
+        else if (gender=='f' && age>25){
+            printf("Eligible for insurance");
+        }
+    
+    else{
+        printf("Not eligible for insurance");  }
+    }
+    else if (status='y')
+    {
+       printf("Eligible for insurance");
+    }
+    else{
+        printf("Not eligible fot insurance");
+    }
+    return 0;
+}
+*/
+/*
+Enter y if married and n if unmarried: n
+Enter m if male and f if female:m
+Enter the age: 45
+Eligible for insurance
+*/
+
+
+
+//--------------------------------------------------------------------------------------------------------------------
+//Q.13-Write a ptogram to read a character from keyboard and convert the input character into uppercase and vice-versa.
+
+/*Algorithm
+Step1:Start 
+Step2:Read a alphabet
+Step3:Check if given reading is lowercase or uppercase 
+    Step3.1:if lowercase then change it to uppercase and vice-versa
+Step4:Display result 
+Step5:stop
+*/
+/*
+#include<stdio.h>
+int main()
+{
+    char a,lowercase,uppercase;
+    printf("Enter Alphabet:");
+    scanf("%c",&a);
+    if (a>='A' && a<='Z')
+    {
+        lowercase=a+32;
+        printf("%c",lowercase);
+    }
+    else
+    {
+        uppercase=a-32;
+        printf("%c",uppercase);
+    }
+    return 0;
+}*/
+// I\O
+// Enter Alphabet:c
+// C                                                                                                                                                               
+ 
+
+
+
+//--------------------------------------------------------------------------
+//Q.14-Write a program to swap two input numbers.
+/*Algorithm
+Step1:Start 
+Step2:declare variables a and b
+Step3:read two numbers as per variables 
+step4: Swap two given numbers from old varible to exchanged variable
+Step7:Display swaped numbers with exchanged variables
+Step8:Stop
+*/
+/*
+    #include<stdio.h>  
+     int main()    
+    {    
+    int a=9, b=11;      
+    printf("Before swap a=%d b=%d",a,b);      
+    a=a+b;//a=30 (10+20)    
+    b=a-b;//b=10 (30-20)    
+    a=a-b;//a=20 (30-10)    
+    printf("\nAfter swap a=%d b=%d",a,b);    
+    return 0;  
+    }   
+*/
+//I\O
+// Before swap a=9 b=11
+// After swap a=11 b=9 
+
+
+
+//----------------------------------------------------------------------------------------------------------
+//Q.15- A year is entered through the keyboard, write a program to determine whether it is leap year or not.
+/*Algorithm
+Step1:Start 
+Step2:Read a year 
+Step3:check if it is divisible by 400 or 4, if true then display it is century leap year
+Step4: else if above step is false then print its non century leap year
+Step5:Stop
+*/
+/*
+#include <stdio.h>
+
+int main()
+{
+    int year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+    if (year%400==0)
+    {
+        printf("Its century leap year");
+    }
+    else if (year%4==0)
+    {
+       printf("Its non century leap year");
+    }
+    else {
+        printf("Its not a leap year");
+    }
+    
+    return 0;
+}
+*/
+/*Enter a year: 17
+Its not a leap year  */ 
+ 
